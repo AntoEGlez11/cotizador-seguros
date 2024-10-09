@@ -1,0 +1,64 @@
+  .header-container {
+    width: 100%;
+    height: 150px; /* Ajusta la altura según lo que necesites */
+    position: relative;
+    overflow: hidden; /* Evita que se desborde la imagen */
+  }
+  
+  .header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen se ajuste al tamaño del contenedor */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* La imagen queda detrás del nav */
+  }
+/* Posiciona el nav sobre la imagen */
+.navbar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; /* Asegura que el nav esté por encima de la imagen */
+  display: flex;
+  justify-content: space-between; /* Centra la barra de navegación horizontalmente */
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo negro semitransparente */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* * Estilos para los enlaces dentro del nav */
+.navbar-overlay ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-overlay li {
+  display: inline;
+}
+
+.navbar-overlay a {
+  color: #fff; /* Color blanco para los enlaces */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-overlay a:hover {
+  color: #f0f0f0; /* Cambia el color del texto ligeramente al hacer hover */
+}
+
+/* Para que el navbar se quede fijo en la parte superior */
+.navbar-overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}

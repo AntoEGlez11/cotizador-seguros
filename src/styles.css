@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+/* Clases de estado de errores para formulario*/
+.ng-valid:not(form).ng-touched {
+    border: 3px solid #42A948;
+}
+.ng-invalid:not(form).ng-touched {
+    border: 3px solid #a94442;
+}

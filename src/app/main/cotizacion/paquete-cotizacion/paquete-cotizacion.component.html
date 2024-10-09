@@ -1,0 +1,10 @@
+<div class="paquete-seguros-container">
+    <div class="paquete-seguro" *ngFor="let paquete of paquetes">
+      <h2>{{ paquete.nombre }}</h2>
+      <p>{{ paquete.descripcion }}</p>
+      <p>{{ paquete.coberturas }}</p>
+      <p>Precio: {{ paquete.precio | currency}}</p>
+      <button class="btnSelect" (click)="selectPaquete(paquete)">Seleccionar</button>
+      <button class="btnEdit" (click)="selectEdit(paquete)">Editar</button>
+    </div>
+  </div>

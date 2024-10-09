@@ -1,0 +1,66 @@
+/* El footer se sitúa al fondo de la página */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* El contenido del footer se centra y se distribuye en columnas */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Estilos para los enlaces de redes sociales */
+.social-links a {
+  margin: 0 10px;
+  display: inline-block;
+  color: #fff; /* Color blanco para los íconos */
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff5722; /* Cambia el color al pasar el cursor sobre los íconos */
+}
+
+/* Estilos específicos para los iconos de FontAwesome */
+.social-links i {
+  font-size: 24px; /* Tamaño de los iconos */
+}
+
+/* Ajuste de texto del footer */
+.footer p {
+  font-size: 14px;
+}
+
+/* Media Query para pantallas más grandes */
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer p {
+    font-size: 16px;
+  }
+
+  .social-links i {
+    font-size: 28px; /* Aumenta el tamaño de los iconos en pantallas más grandes */
+  }
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 480px) {
+  .footer p {
+    font-size: 12px;
+  }
+
+  .social-links i {
+    font-size: 20px; /* Disminuye el tamaño de los iconos en pantallas pequeñas */
+  }
+}
